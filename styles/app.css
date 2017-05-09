@@ -1,0 +1,60 @@
+/* app css stylesheet */
+
+.card{
+  background-image: url("../img/cards.png");
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  height: 123px;
+  width: 79px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+.card_back{ background-position: -158px -492px;}
+
+.card_suit--club{background-position-y: 0;}
+
+.card_suit--diamond{background-position-y: -123px;}
+
+.card_suit--heart{background-position-y: -246px;}
+
+.card_suit--spade{background-position-y: -369px;}
+
+.card_value--ace{
+  background-position-x: 0;
+}
+.card_value--two{
+  background-position-x: -79px;}
+
+.card_value--three{
+  background-position-x: -158px;}
+
+.card_value--four{
+  background-position-x: -237px;}
+
+.card_value--five{
+  background-position-x: -316px;}
+
+.card_value--six{
+  background-position-x: -395px;}
+
+.card_value--seven{
+  background-position-x: -474px;}
+
+.card_value--eight{
+  background-position-x: -553px;}
+
+.card_value--nine{
+  background-position-x: -632px;}
+
+.card_value--ten{
+  background-position-x: -711px;}
+
+.card_value--jack{
+  background-position-x: -790px;}
+
+.card_value--queen{
+  background-position-x: -869px;}
+
+.card_value--king{
+  background-position-x: -948px;}

@@ -1,0 +1,27 @@
+{
+  "name": "war",
+  "version": "1.0.0",
+  "description": "code sample for learning",
+  "main": "app/js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "OOP",
+    "Tests",
+    "Documentation"
+  ],
+  "author": "jeremy sullivan",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "bower": "^1.3.1",
+    "gulp": "^3.9.1",
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.5.2",
+    "jsdoc": "^3.4.3",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.1.6"
+  }
+}
