@@ -1,25 +1,41 @@
-module.exports = function(config){
-  config.set({
+module.exports = function (config) {
+    config.set({
+        files: [
+            { pattern: 'test-context.js', watched: false }
+        ],
 
-    basePath : '../../',
+        autoWatch: true,
 
-    files : [
-        'war/scripts/Card.js',
-        'war/scripts/Deck.js',
-        'war/tests/unit/*.js'
-    ],
+        frameworks: ['jasmine'],
 
-    autoWatch : true,
+        preprocessors: {
+            'test-context.js': ['webpack']
+        },
 
-    frameworks: ['jasmine'],
+        browsers: ['Chrome'],
 
-    browsers : ['Chrome'],
+        webpack: {
+            module: {
+                rules: [
+                    {
+                        test: /\.js/,
+                        exclude: /node_modules/,
+                        use: {
+                            loader: 'babel-loader',
+                            options: {
+                                presets: [
+                                    ['@babel/preset-env', {targets: "defaults"}]
+                                ],
+                            }
+                        }
+                    }
+                ]
+            },
+            watch: true
+        },
+        webpackServer: {
+            noInfo: true
+        }
 
-    plugins : [
-            'karma-chrome-launcher',
-            'karma-firefox-launcher',
-            'karma-jasmine'
-            ]
-
-  });
+    });
 };

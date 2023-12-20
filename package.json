@@ -13,15 +13,17 @@
   ],
   "author": "jeremy sullivan",
   "license": "UNLICENSED",
-  "devDependencies": {
-    "bower": "^1.3.1",
-    "gulp": "^3.9.1",
-    "http-server": "^0.9.0",
-    "jasmine-core": "^2.5.2",
-    "jsdoc": "^3.4.3",
-    "karma": "^1.3.0",
-    "karma-chrome-launcher": "^0.1.12",
-    "karma-firefox-launcher": "^0.1.7",
-    "karma-jasmine": "^0.1.6"
+  "dependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "babel-loader": "^9.1.3",
+    "jasmine-core": "^5.1.1",
+    "jsdoc": "^4.0.2",
+    "karma": "^6.4.2",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-jasmine": "^5.1.0",
+    "karma-webpack": "^5.0.0",
+    "webpack": "^5.89.0"
   }
 }

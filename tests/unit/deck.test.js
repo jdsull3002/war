@@ -1,13 +1,16 @@
+"use strict";
 /**
  * Created by jdsul on 12/28/2016.
  */
+
+import { Deck } from '../../scripts/Deck.js';
 describe('deck', function(){
-    "use strict";
-    let dataSource = {
+
+    const dataSource = {
             "suits":[
                 "hearts", "clubs", "diamonds", "spades"
             ],
-            "values":[
+            "ranks":[
                 {   "name": "ace",
                     "rank": 14
                 },
@@ -21,8 +24,8 @@ describe('deck', function(){
                     "rank": 4
                 }
             ]
-        },
-        testDeck;
+        };
+        let testDeck;
 
         beforeEach(function(){
             testDeck = new Deck(dataSource);
@@ -41,7 +44,7 @@ describe('deck', function(){
         });
 
         it('should throw an error when already populated', function(){
-            expect(function(){testDeck.populate(dataSource)}).toThrow( "Already populated");
+            expect(function(){testDeck.populate(dataSource)}).toThrow( new Error("Already populated"));
         })
 
 })

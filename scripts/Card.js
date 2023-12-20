@@ -1,8 +1,9 @@
+'use strict';
 /**
  * Created by jdsul on 12/28/2016.
  */
-class Card
-{
+
+export class Card {
     constructor(suit, value)
     {
         this.rank = value.rank;
